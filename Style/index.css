@@ -73,7 +73,7 @@ html::-webkit-scrollbar-thumb{
     padding: 15px;
 }
 .navbar-container .navbar-list li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #050706;
     text-transform: uppercase;
 }
@@ -83,4 +83,41 @@ html::-webkit-scrollbar-thumb{
 }
 #menu-btn {
     display: none;
+}
+
+
+@media (max-width: 768px){
+    .navbar-container .navbar-list {
+        display: none;
+    }
+    #menu-btn {
+        display: flex;
+        margin-right: 4rem;
+    }
+    #close-btn {
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        right: 0;
+        margin-top: 1.9rem;
+        margin-right: 1.9rem;
+    }
+    .navbar-container .mobile {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        padding: 20px;
+        background-color: aquamarine;
+    }
+    .navbar-container .mobile li {
+        padding: 20px;
+    }
+
+    .navbar-container .mobile li a {
+        color: #050706;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
 }
